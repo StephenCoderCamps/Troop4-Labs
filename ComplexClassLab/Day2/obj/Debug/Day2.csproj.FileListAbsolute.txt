@@ -1,0 +1,6 @@
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\bin\Debug\Day2.exe.config
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\bin\Debug\Day2.exe
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\bin\Debug\Day2.pdb
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\obj\Debug\Day2.csprojResolveAssemblyReference.cache
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\obj\Debug\Day2.exe
+C:\Users\stephen\Documents\Visual Studio 2013\Projects\Troop4\Day2\Day2\obj\Debug\Day2.pdb
