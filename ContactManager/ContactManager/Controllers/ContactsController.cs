@@ -31,6 +31,7 @@ namespace ContactManager.Controllers
 
         // POST: Contacts/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Contact contact)
         {
             if (ModelState.IsValid) {
