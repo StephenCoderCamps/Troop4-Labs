@@ -1,0 +1,13 @@
+﻿
+
+<ul>
+    <li ng-repeat="movie in vm.movies">
+        {{movie.title}}
+        <a href="/edit/{{movie.id}}" ng-show="account.isLoggedIn()">edit</a>
+        <a href="/delete/{{movie.id}}" ng-show="account.isLoggedIn()">delete</a>
+
+    </li>
+</ul>
+
+
+<a href="/add" ng-show="account.isLoggedIn()">add</a>

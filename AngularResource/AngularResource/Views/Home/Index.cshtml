@@ -1,0 +1,29 @@
+﻿@{
+    
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="AngularResource">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <base href="/" />
+</head>
+<body ng-controller="AccountController as account">
+
+    <a href="/login" ng-show="!account.isLoggedIn()">login</a>
+    <a href="#" ng-show="account.isLoggedIn()">logout</a>
+
+    <hr/>
+
+    <ng-view></ng-view>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers.js"></script>
+    <script src="~/ngApp/services.js"></script>
+</body>
+</html>
