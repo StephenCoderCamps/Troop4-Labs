@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://gitcdn.xyz/repo/angular/bower-material/v0.11.0/angular-material.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body ng-controller="HomeController as vm">
+    <md-input-container>
+        <md-icon>search</md-icon>
+        <input ng-model="vm.search" ng-change="vm.searchTitle()">
+    </md-input-container>
+    <md-card ng-repeat ="car in vm.cars">
+    
+    <md-card-content>
+        {{car.title}}
+        {{car.briefDescription}}
+    </md-card-content>
+        <div class="md-actions" layout="row" layout-align="end center">
+            <md-button ng-click ="vm.openDialog(car.id)">View Details</md-button>
+           
+        </div>
+    </md-card>
+
+    
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-messages.min.js"></script>
+    <script src="https://gitcdn.xyz/repo/angular/bower-material/v0.11.0/angular-material.js"></script>
+
+
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers.js"></script>
+    <script src="~/ngApp/services.js"></script>
+</body>
+</html>
