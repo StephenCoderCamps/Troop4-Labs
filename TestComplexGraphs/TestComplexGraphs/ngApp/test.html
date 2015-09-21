@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-controller="GenresController as vm">
+
+    <ul>
+        <li ng-repeat="genre in vm.genres">
+            {{genre.Id}} - {{genre.Name}}
+            <ul>
+                <li ng-repeat="movie in genre.Movies">
+                    {{movie.Title}}
+                    <ul>
+                        <li ng-repeat="actor in movie.Actors">
+                            {{actor.Name}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr />
+
+    <div ng-controller="OneGenreController as one">
+        <h2>{{one.genre.Name}}</h2>
+        <ul>
+            <li ng-repeat="movie in one.genre.Movies">
+                {{movie.Title}}
+                <ul>
+                    <li ng-repeat="actor in movie.Actors">
+                        {{actor.Name}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+</body>
+</html>
